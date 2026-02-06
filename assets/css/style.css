@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset e Base - Mobile First */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    color: #222222;
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #ca3c3f;
+    outline: none;
+}
+
+/* Header - Mobile First */
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 1.25rem;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Navigation - Mobile First */
+.menu {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu-links a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Banner - Mobile First */
+.banner {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.coluna {
+    width: 100%;
+}
+
+.banner p:first-child {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    text-align: center;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button - Mobile First */
+.botao {
+    display: inline-block;
+    border: 0.125rem solid #333333;
+    border-radius: 0.875rem;
+    padding: 1.25rem 2rem;
+    font-size: clamp(0.875rem, 4vw, 1.25rem);
+    font-weight: 600;
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #ca3c3f;
+    color: #ffffff;
+    border-color: #ca3c3f;
+}
+
+/* Menu Principal - Mobile First */
+main {
+    width: 100%;
+}
+
+/* Cardápio - Mobile First */
+.cardapio {
+    width: 100%;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-top: 0.0625rem dashed #999999;
+}
+
+.cardapio h1 {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    margin: 0 0 1.5rem 0;
+}
+
+/* Seção de Cardápio */
+.cardapio-secao {
+    margin-bottom: 2rem;
+}
+
+.cardapio-categoria {
+    text-align: left;
+    color: #ca3c3f;
+    font-size: clamp(1.25rem, 5vw, 1.375rem);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Item do Cardápio - Mobile First */
+.cardapio-item {
+    padding: 1.25rem 0;
+    text-align: left;
+    width: 100%;
+    border-bottom: 0.0625rem solid #f0f0f0;
+    min-height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardapio-item:last-child {
+    border-bottom: none;
+}
+
+.cardapio-nome {
+    display: block;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cardapio-preco {
+    display: block;
+    font-size: 0.875rem;
+    color: #ca3c3f;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cardapio-descricao {
+    font-size: 0.8rem;
+    color: #999999;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Footer - Mobile First */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.875rem;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+footer h3 {
+    margin: 0 0 1rem 0;
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+/* WhatsApp - Mobile First */
+.link-whatsapp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 999;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.link-whatsapp img {
+    height: 3rem;
+    width: 3rem;
+    display: block;
+}
+
+.link-whatsapp:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Tablet - min-width 640px */
+@media (min-width: 40rem) {
+    .banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .coluna {
+        width: 48%;
+    }
+
+    .banner p:first-child {
+        text-align: left;
+        padding: 0;
+    }
+}
+
+/* Desktop - min-width 900px */
+@media (min-width: 56.25rem) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+    }
+
+    .header img {
+        max-width: 12rem;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+    .banner {
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+
+    .banner p:first-child {
+        font-size: 2.5rem;
+    }
+
+    .cardapio {
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    .link-whatsapp img {
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+
+    footer {
+        padding: 3rem 2rem;
+        font-size: 1rem;
+    }
+}
